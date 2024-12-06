@@ -10,6 +10,7 @@ const Pizza = (properties) => {
     <div className="pizza">
       <h1>{properties.name}</h1>
       <p>{properties.description}</p>
+      <img src={properties.image} alt={properties.name} />
     </div>
   );
 };
