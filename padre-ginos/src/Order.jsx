@@ -1,5 +1,10 @@
 import Pizza from "./Pizza";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+const intl = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+});
 
 export default function Order() {
   //   const pizzaType = "pepperoni";
