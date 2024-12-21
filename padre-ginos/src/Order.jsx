@@ -35,7 +35,7 @@ export default function Order() {
 
   useEffect(() => {
     fetchPizzaTypes();
-  }, []);
+  }, []); // empty array tells, never gonna run it again.
 
   return (
     <div className="order">
