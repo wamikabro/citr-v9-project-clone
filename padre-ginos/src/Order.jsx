@@ -98,14 +98,13 @@ export default function Order() {
         </div>
         <div className="order-pizza">
           {loading ? <p>Loading...</p> : (
-            <>
+           
               <Pizza
                 name={selectedPizza.name}
                 description={selectedPizza.description}
                 image={selectedPizza.image}
               />
-              <p>{price}</p>
-            </>
+           
           )}
           <p>{price}</p>
         </div>
