@@ -102,7 +102,7 @@ export default function Order() {
             description={selectedPizza.description}
             image={selectedPizza.image}
           />
-          <p>$13.37</p>
+          <p>{price}</p>
         </div>
       </form>
     </div>
