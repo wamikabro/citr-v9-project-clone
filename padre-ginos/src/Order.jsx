@@ -24,7 +24,7 @@ export default function Order() {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({cart}),
+      body: JSON.stringify({ cart }),
     });
 
     setCart([]);
@@ -131,7 +131,7 @@ export default function Order() {
       </form>
       </div>
       {
-        loading? <p>Loading...</p> : <Cart checkout="checkout" cart={cart} />
+        loading? <p>Loading...</p> : <Cart checkout={checkout} cart={cart} />
       }
     </div>
   );
