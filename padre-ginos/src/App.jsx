@@ -3,7 +3,7 @@ import Order from "./Order";
 import PizzaOfTheDay from "./PizzaOfTheDay";
 import Header from "./Header";
 import { CartContext } from "./contexts";
-import { StrictMode } from "react";
+import { StrictMode, useState } from "react";
 
 const App = () => {
   const cartHook = useState([]);
