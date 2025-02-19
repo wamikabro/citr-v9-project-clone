@@ -8,10 +8,10 @@ import {priceConverter} from '../useCurrency'
 import ErrorBoundary from '../ErrorBoundary'
 
 export const Route = createLazyFileRoute('/past')({
-  component: PastOrdersRoute,
+  component: ErrorBoundaryWrappedPastOrdersRoutes,
 })
 
-function ErrorBoundaryWrappedPastOrdersRoute() {
+function ErrorBoundaryWrappedPastOrdersRoutes() {
   return (
     <ErrorBoundary>
       <PastOrdersRoute />
