@@ -19,6 +19,10 @@ function ContactRoute() {
     },
   });
 
+  if(mutation.isError){
+    return <h3>Something went wrong. Please try again later.</h3>
+  }
+
   return (
     <div className='contact'>
       <h2>Contact</h2>
